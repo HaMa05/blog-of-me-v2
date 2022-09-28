@@ -1,0 +1,14 @@
+---
+import {Image} from '@astrojs/image/components';
+import { IoRocket } from 'react-icons/io5';
+// const isProd = import.meta.env.PROD
+import baseAssetUrl from  '../../public/images/foreign.jpg'
+---
+<section class="relative flex items-center justify-center h-80 overflow-hidden top-[70px]">
+  <div>
+    <Image src={baseAssetUrl} alt="Foreign image" aspectRatio={16/9}/>
+  </div>
+  <div class="absolute">
+    <h3 class="uppercase text-4xl flex items-center gap-3 tracking-widest text-zinc-300">Xin chào<IoRocket /></h3>
+  </div>
+</section>
